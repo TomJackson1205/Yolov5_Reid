@@ -241,12 +241,12 @@ if __name__ == '__main__':
     else:
         detect = Detector(imgsz=640, half=False, weight=weight_path)
 
-    cap = cv2.VideoCapture(r"test_video/QQ视频_4c8b26784bd33fb914e73ae9cf68cd0e1619761655.mp4")
-    cap1 = cv2.VideoCapture(r"test_video/广严大道图书馆路口_20210427143527-20210427143727_1.mp4")
-    cap2 = cv2.VideoCapture(r"test_video/锦城农场路口_20210427143624-20210427143824_2.mp4")
-    cap3 = cv2.VideoCapture(r"test_video/广严大道忠孝楼后大门_20210427143730-20210427144054_1.mp4")
-    cap4 = cv2.VideoCapture(r"test_video/广严大道5食堂_20210427143800-20210427144000_1.mp4")
-    cap5 = cv2.VideoCapture(r"test_video/至善西路路口_20210427143919-20210427144119_1.mp4")
+    cap = cv2.VideoCapture(r"test_video/4c8b26784bd33fb914e73ae9cf68cd0e1619761655.mp4")
+    cap1 = cv2.VideoCapture(r"test_video/20210427143527-20210427143727_1.mp4")
+    cap2 = cv2.VideoCapture(r"test_video/20210427143624-20210427143824_2.mp4")
+    cap3 = cv2.VideoCapture(r"test_video/20210427143730-20210427144054_1.mp4")
+    cap4 = cv2.VideoCapture(r"test_video/20210427143800-20210427144000_1.mp4")
+    cap5 = cv2.VideoCapture(r"test_video/20210427143919-20210427144119_1.mp4")
 
     width = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)))
     height = (int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
