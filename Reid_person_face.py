@@ -350,36 +350,3 @@ if __name__ == '__main__':
         # cv2.imshow("target", frame)
         # cv2.waitKey(1)
     # cv2.destroyAllWindows()
-
-
- # cap = cv2.VideoCapture(r"/media/xianyu/ESD-USB/video/广严大道忠孝楼后大门_20210427143730-20210427144054_1.mp4")
-    # cap = cv2.VideoCapture(r"/media/xianyu/ESD-USB/video/至善西路路口_20210427143919-20210427144119_1.mp4")
-    # width = (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)))
-    # height = (int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-    # fourcc = cv2.VideoWriter_fourcc(*'XVID')
-    # out = cv2.VideoWriter('/home/xianyu/PycharmProjects/Reid/video/至善西路路口_20210427143919-20210427144119_1.mp4', fourcc, 25.0, (2 * width, 2 * height))
-    # while True:
-    #     ret, fram = cap.read()
-    #     # cv2.namedWindow('target',0)
-    #     font = cv2.FONT_HERSHEY_SIMPLEX
-    #     if ret == False:
-    #         break
-    #     if use_face_recognize and use_Reid:
-    #         boxes, names, face_boxes, face_names= detect(fram, conf_thres=0.25, iou_thres=0.45, dist_thres=dist_thres, face_thres=face_thres)
-    #     elif use_Reid:
-    #         results = detect(fram, conf_thres=0.25, iou_thres=0.45, dist_thres=dist_thres)
-    #     elif use_face_recognize:
-    #         results = detect(fram, conf_thres=0.25, iou_thres=0.45, face_thres=face_thres)
-    #     else:
-    #         boxes = detect(fram, conf_thres=0.25, iou_thres=0.45)
-    #
-    #     print(results)
-    #     for name_and_box in results:
-    #         x1, y1, x2, y2, cls = name_and_box['box']
-    #         c1, c2 = (x1, y1), (x2, y2)
-    #         cv2.rectangle(fram, c1, c2, colors[name_and_box['name']])
-    #         cv2.putText(fram, name_and_box['name'], (x1, y1 - 10), font, 1.2, colors[name_and_box['name']], 2)
-    #     out.write(fram)
-    #     cv2.imshow("target", fram)
-    #     cv2.waitKey(1)
-    # cv2.destroyAllWindows()
